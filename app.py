@@ -59,8 +59,10 @@ def load_models():
     try:
         with open('le.pkl', 'rb') as file:
             le = pickle.load(file)
+        print("\nLoading Label Encoder Sucessfull\n")
     except FileNotFoundError:
-        print("\nDownloading Label Encoder\n")
+        le = None
+        print("\nError loading Label Encoder\n")
 
     return resnet50_model, vgg16_model, inceptionv3_model, le
 
