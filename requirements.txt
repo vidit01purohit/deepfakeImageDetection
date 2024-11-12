@@ -4,3 +4,4 @@ numpy
 huggingface-hub
 opencv-python-headless
 scikit-learn
+tqdm
