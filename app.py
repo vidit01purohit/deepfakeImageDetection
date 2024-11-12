@@ -56,13 +56,11 @@ def load_models():
     inceptionv3_model = tf.saved_model.load(inceptionv3_model_path)
 
     # Load Label Encoder (Cache locally as well)
-    le_path = '/content/le.pkl'  # Update this path if necessary
-    if not os.path.exists('le.pkl'):
+    try:
+        with open('le.pkl', 'rb') as file:
+            le = pickle.load(file)
+    except FileNotFoundError:
         print("\nDownloading Label Encoder\n")
-        with open('le.pkl', 'wb') as file:
-            pickle.dump(le, file)  # Make sure you have 'le' saved before running
-    with open('le.pkl', 'rb') as file:
-        le = pickle.load(file)
 
     return resnet50_model, vgg16_model, inceptionv3_model, le
 
