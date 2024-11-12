@@ -5,6 +5,7 @@ import cv2
 import os
 import pickle
 from huggingface_hub import snapshot_download
+from sklearn.preprocessing import LabelEncoder
 
 # Set the page configuration first
 st.set_page_config(page_title="Deepfake Detection", layout="centered")
