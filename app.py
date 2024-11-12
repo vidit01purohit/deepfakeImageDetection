@@ -23,7 +23,7 @@ def load_models():
     resnet50_model_path = os.path.join(MODEL_CACHE_DIR, "resnet50")
     if not os.path.exists(resnet50_model_path):
         print("\nDownloading ResNet50 model\n")
-        local_dir_resnet50 = snapshot_download(repo_id="vidit01purohit/resnet50_model_for_deepfakeImage")
+        local_dir_resnet50 = snapshot_download(repo_id="vidit01purohit/resnet50_model_for_deepfakeImage",disable_tqdm=True)
         # os.rename(os.path.join(local_dir_resnet50, "resnet50_model_for_deepfakeImage"), resnet50_model_path)
         resnet50_model_path = os.path.join(local_dir_resnet50, "resnet50_model_for_deepfakeImage")
     else:
@@ -35,7 +35,7 @@ def load_models():
     vgg16_model_path = os.path.join(MODEL_CACHE_DIR, "vgg16")
     if not os.path.exists(vgg16_model_path):
         print("\nDownloading VGG16 model\n")
-        local_dir_vgg16 = snapshot_download(repo_id="vidit01purohit/vgg16_model_for_deepfakeImage")
+        local_dir_vgg16 = snapshot_download(repo_id="vidit01purohit/vgg16_model_for_deepfakeImage",disable_tqdm=True)
         # os.rename(os.path.join(local_dir_vgg16, "vgg16_model_for_deepfakeImage"), vgg16_model_path)
         vgg16_model_path = os.path.join(local_dir_vgg16, "vgg16_model_for_deepfakeImage")
     else:
@@ -47,7 +47,7 @@ def load_models():
     inceptionv3_model_path = os.path.join(MODEL_CACHE_DIR, "inceptionv3")
     if not os.path.exists(inceptionv3_model_path):
         print("\nDownloading InceptionV3 model\n")
-        local_dir_inceptionv3 = snapshot_download(repo_id="vidit01purohit/inceptionv3_model_for_deepfakeImage")
+        local_dir_inceptionv3 = snapshot_download(repo_id="vidit01purohit/inceptionv3_model_for_deepfakeImage",disable_tqdm=True)
         # os.rename(os.path.join(local_dir_inceptionv3, "inceptionv3_model_for_deepfakeImage"), inceptionv3_model_path)
         inceptionv3_model_path = os.path.join(local_dir_inceptionv3, "inceptionv3_model_for_deepfakeImage")
     else:
