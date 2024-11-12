@@ -1,4 +1,3 @@
-Here’s a **fancy README** for your **Deepfake Detection** app on GitHub:
 
 ---
 
@@ -44,10 +43,6 @@ Feel free to fork this repository and contribute to the project! If you have new
 
 ### 🔗 Demo:
 Check out the live demo of this app on Streamlit Cloud! *(Provide your app's Streamlit URL here)*.
-
-### 📸 Screenshot:
-
-![Deepfake Detection App](assets/screenshot.png)
 
 ### 💬 Feedback:
 Your feedback is always welcome! Create an issue or reach out if you have any suggestions or encounter any problems.
