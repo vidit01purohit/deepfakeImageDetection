@@ -1,0 +1,43 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit files
+.streamlit/
+
+# TensorFlow files
+saved_model/
+*.h5
+
+# Model checkpoints and weights
+model/
+*.pkl
+
+# Virtual environment directories
+venv/
+env/
+*.env/
+models_cache/
+
+# System-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Logs
+*.log
+
+# VSCode files
+.vscode/
+
+# Hugging Face cache
+.cache/
+
+# Cache folders from Hugging Face Hub
+*.huggingface
+
+# Miscellaneous files
+*.swp
+*.swo
