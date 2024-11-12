@@ -4,3 +4,5 @@ opencv-python
 numpy
 huggingface-hub
 opencv-python-headless==4.7.0.72
+libgl1-mesa-glx
+libglib2.0-0
