@@ -6,6 +6,9 @@ import os
 import pickle
 from huggingface_hub import snapshot_download
 from sklearn.preprocessing import LabelEncoder
+import tqdm
+
+tqdm._lock = None
 
 # Set the page configuration
 st.set_page_config(page_title="Deepfake Detection", layout="centered")
